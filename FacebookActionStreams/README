@@ -1,0 +1,19 @@
+Facebook Action Streams Plugin
+
+By Brendan O'Connor
+http://ussjoin.com
+
+Plugin homepage at
+http://www.malafter.com/movable-type.html
+
+In order for this plugin to function effectively, you must also add the
+YourData application to Facebook, and follow its instructions. That application
+is available at http://apps.facebook.com/yourdata , and a page dedicated to
+how it works is at http://ussjoin.com/yourdata.html .
+
+Once you've done that, just edit your Facebook Action Streams configuration (if
+you have previously added your Facebook profile to Action Streams) and grant it
+permission to update with your feeds.
+
+To install, just copy the contents of mt-static into your mt-static directory,
+and the contents of plugins into your plugins directory.

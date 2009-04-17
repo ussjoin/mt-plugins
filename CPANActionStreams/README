@@ -1,0 +1,15 @@
+CPAN Action Streams Plugin
+
+By Brendan O'Connor
+http://ussjoin.com
+
+Icon Copyright CPAN, <http://search.cpan.org>
+
+Plugin homepage at
+http://www.malafter.com/movable-type.html
+
+RSS Feed for individual users kindly provided by
+http://unknownplace.org/cpanrecent/
+
+To install, just copy the contents of mt-static into your mt-static directory,
+and the contents of plugins into your plugins directory.

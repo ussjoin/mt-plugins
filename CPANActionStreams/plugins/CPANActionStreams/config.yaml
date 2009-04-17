@@ -1,0 +1,29 @@
+id:   CPANActionStreams
+key:  CPANActionStreams
+name: CPAN Action Streams Plugin
+description: Creates an Action Stream from a CPAN user's work.
+version: 1.0
+author_name: Brendan O'Connor
+author_link: http://www.malafter.com
+plugin_link: http://www.malafter.com/movable-type.html
+profile_services:
+    cpan:
+        name: CPAN Uploads
+        url: http://search.cpan.org/~{{ident}}
+        ident_label: PAUSE Username (all lowercase)
+        ident_example: ussjoin
+        icon: cpan.png
+
+action_streams:
+    cpan:
+        uploads:
+            name: Uploads
+            description: Uploads to CPAN
+            html_form: '[_1] uploaded <a href="[_2]">[_3]</a> to CPAN'
+            html_params:
+                - url
+                - title
+            url: 'http://unknownplace.org/cpanrecent/rss/author/{{ident}}'
+            identifier: url
+            rss:
+                created_on: dc:date/child::text()

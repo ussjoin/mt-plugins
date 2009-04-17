@@ -1,0 +1,20 @@
+Get Satisfaction Action Streams Plugin
+
+By Brendan O'Connor
+http://ussjoin.com
+
+Icon Copyright Get Satisfaction, <http://getsatisfaction.com/>
+
+Plugin homepage at
+http://www.malafter.com/movable-type.html
+
+To install, just copy the contents of mt-static into your mt-static directory,
+and the contents of plugins into your plugins directory.
+
+Changes in Version 1.1
+
+Fixed the YAML for topics started to make it work properly
+
+Note that at this time, replies do not work properly, but I've left them in
+place should the API change to support them.
+

@@ -1,0 +1,22 @@
+id:   FacebookActionStreams
+key:  FacebookActionStreams
+name: Facebook Action Streams Addon
+description: Adds a Facebook Action Stream to the existing Facebook Profile.
+version: 1.1
+author_name: Brendan O'Connor
+author_link: http://www.malafter.com
+plugin_link: http://www.malafter.com/movable-type.html
+
+action_streams:
+    facebook:
+        status:
+            name: Topics
+            description: The status updates you've posted to Facebook.
+            html_form: '[_1] posted "<a href="[_2]">[_3]</a>" on Facebook'
+            html_params:
+                - url
+                - title
+            url: 'http://yourdata.ussjoin.com/feeds/status/{{ident}}'
+            atom: 1
+
+

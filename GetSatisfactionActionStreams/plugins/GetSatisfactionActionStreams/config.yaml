@@ -1,0 +1,42 @@
+id:   GetSatisfactionActionStreams
+key:  GetSatisfactionActionStreams
+name: Get Satisfaction Action Streams Plugin
+description: Creates an Action Stream from a user's activities on Get Satisfaction.
+version: 1.1
+author_name: Brendan O'Connor
+author_link: http://www.malafter.com
+plugin_link: http://www.malafter.com/movable-type.html
+
+profile_services:
+    getsatisfaction:
+        name: Get Satisfaction
+        url: http://getsatisfaction.com/people/{{ident}}
+        ident_label: Get Satisfaction Username
+        ident_example: USSJoin
+        icon: getsatisfaction.png
+
+action_streams:
+    getsatisfaction:
+        topics:
+            name: Topics
+            description: The topics you've started on Get Satisfaction
+            html_form: '[_1] started the topic <a href="[_2]">[_3]</a> on Get Satisfaction'
+            html_params:
+                - url
+                - title
+            url: 'http://api.getsatisfaction.com/people/{{ident}}/topics'
+            atom:
+                url: link[@rel='topic_at_sfn']/@href
+            
+        replies:
+            name: Replies
+            description: The topics to which you've replied on Get Satisfaction
+            html_form: '[_1] replied to the topic <a href="[_2]">[_3]</a> on Get Satisfaction'
+            html_params:
+                - url
+                - title
+            url: 'http://api.getsatisfaction.com/people/{{ident}}/replies'
+            atom:
+                url: link[@rel='topic_at_sfn']/@href
+
+

@@ -1,0 +1,29 @@
+id:   BlipTVActionStreams
+key:  BlipTVActionStreams
+name: Blip.TV Action Streams Plugin
+description: Creates an Action Stream from a Blip.TV show.
+version: 1.0
+author_name: Brendan O'Connor
+author_link: http://www.malafter.com
+plugin_link: http://www.malafter.com/movable-type.html
+
+profile_services:
+    bliptv:
+        name: Blip.TV
+        url: http://{{ident}}.blip.tv
+        ident_label: Blip Show Name
+        ident_example: USSJoin
+        icon: bliptv.png
+
+action_streams:
+    bliptv:
+        shows:
+            name: Shows
+            description: Shows You've Posted on Blip.tv
+            html_form: '[_1] posted <a href="[_2]">[_3]</a> on Blip.TV'
+            html_params:
+                - url
+                - title
+            url: 'http://{{ident}}.blip.tv/rss'
+            identifier: url
+            rss: 1

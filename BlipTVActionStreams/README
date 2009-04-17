@@ -1,0 +1,12 @@
+Blip.TV Action Streams Plugin
+
+By Brendan O'Connor
+http://ussjoin.com
+
+Icon Copyright Blip.TV, <http://blip.tv>
+
+Plugin homepage at
+http://www.malafter.com/movable-type.html
+
+To install, just copy the contents of mt-static into your mt-static directory,
+and the contents of plugins into your plugins directory.
