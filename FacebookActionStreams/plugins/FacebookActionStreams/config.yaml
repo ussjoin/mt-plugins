@@ -12,7 +12,7 @@ action_streams:
         status:
             name: Topics
             description: The status updates you've posted to Facebook.
-            html_form: '[_1] posted "<a href="[_2]">[_3]</a>" on Facebook'
+            html_form: '[_1] posted "<a href="[_2]">[_3]</a>" on Facebook.'
             html_params:
                 - url
                 - title
