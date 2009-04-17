@@ -1,0 +1,30 @@
+id:   GitHubActionStreams
+key:  GitHubActionStreams
+name: GitHub Action Streams Addon
+description: Adds a GitHub Action Stream from a user's GitHub Activities.
+version: 1.0
+author_name: Brendan O'Connor
+author_link: http://www.malafter.com
+plugin_link: http://www.malafter.com/movable-type.html
+
+profile_services:
+    github:
+        name: GitHub
+        url: http://github.com/{{ident}}
+        ident_label: GitHub Username
+        ident_example: ussjoin
+        icon: github.png
+
+action_streams:
+    github:
+        actions:
+            name: Actions
+            description: Actions You've Taken on GitHub
+            html_form: '[_1] <a href="[_2]">[_3]</a>.'
+            html_params:
+                - url
+                - title
+            url: 'http://github.com/{{ident}}.atom'
+            atom: 1
+            class: GitHub
+

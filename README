@@ -12,5 +12,6 @@ Contents:
 * CPANActionStreams - a plugin to add support for CPAN <http://cpan.org/> module posts and updates.
 * FacebookActionStreams - a plugin to add support for taking status updates from Facebook
 * GetSatisfactionActionStreams - a plugin to add support for <http://getsatisfaction.com/>
+* GitHubActionStreams - a plugin that adds all the actions you take on GitHub
 
 Each of the plugins' README files contains more information.
